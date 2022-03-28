@@ -1,0 +1,210 @@
+            /* CSS Here*/
+        
+        @charset "UTF-8";
+        /* html class*/
+        
+        .hidden {
+            display: none;
+        }
+        
+        p {
+            color: black;
+            line-height: 100px;
+            font-size: 40px;
+            text-align: center;
+            margin: 1px;
+            font-weight: bold;
+        }
+        
+        body {
+            border-top: 3px solid #333;
+            margin: 0px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        /*container main page element*/
+        
+        #siteContainer {
+            margin: 0 auto;
+            /* center container */
+            width: 1520px;
+        }
+        
+        #mainHeader {
+            margin-top: 0px;
+            padding-bottom: 10px;
+            height: 100px;
+            /* hard coded height*/
+            display: flex;
+            flex-direction: row;
+            background-color: #333;
+            border: 1px solid red;
+        }
+        
+        #logo {
+            width: 210px;
+            height: 160px;
+            margin-left: -1px;
+            margin-top: -1px;
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        
+        #heroImg1 {
+            margin-top: 0px;
+            padding-bottom: 250px;
+            display: flex;
+            width: 1510px;
+            flex-direction: row;
+            background-color: purple;
+            justify-content: center;
+            border: 6px solid black;
+        }
+        
+        #mainNav {
+            display: flex;
+            flex-direction: column;
+            width: 1300px;
+            padding-bottom: 109px;
+            margin-left: -1px;
+            margin-top: -1px;
+            background-color: orange;
+            border: 2px solid black;
+        }
+        /* header section with the logo and nav bar ends over here*/
+        /* page4 starts here */
+        
+        .supportTeam {
+            background-color: grey;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .supportTeam>div {
+            background-color: lightgray;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            width: 80%;
+            height: 200px;
+            margin: 30px;
+            padding-top: 70px;
+            margin-left: 10%;
+            border: 2px solid #333;
+        }
+        
+        #person {
+            width: 25%;
+            height: 250px;
+            padding-top: 8%;
+            border: 2px solid #333;
+            border-radius: 50%;
+        }
+        
+        #personInfo {
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            height: 300px;
+            padding-bottom: 20px;
+            padding: 30px;
+            border: none;
+            background-color: gray;
+        }
+        
+        #personName {
+            width: 70%;
+            height: 10px;
+            border: 2px solid #333;
+            background-color: lightgray;
+            padding-bottom: 100px;
+            margin-bottom: 10px;
+        }
+        
+        #personEmail {
+            flex: 50%;
+            height: 10px;
+            width: 60%;
+            border: 2px solid #333;
+            background-color: lightgray;
+            padding-bottom: 100px;
+            margin-bottom: 10px;
+        }
+        /* page4 ends here */
+        /*FOOTER SECTION FOR all pages*/
+        
+        / #mainFooter {
+            display: flex;
+            background-color: lightgray;
+            flex-direction: column;
+            border: 2px solid #333;
+        }
+        
+        #emailList {
+            background-color: cornflowerblue;
+            justify-content: center;
+            padding: 0px;
+            width: 430px;
+            margin-left: 560px;
+            border: 2px solid #333;
+        }
+        
+        #contactInformation {
+            background-color: cornflowerblue;
+            justify-content: center;
+            padding: 0px;
+            width: 430px;
+            margin-left: 560px;
+            border: 2px solid #333;
+        }
+        
+        #copyright {
+            background-color: cornflowerblue;
+            justify-content: center;
+            padding: 0px;
+            width: 430px;
+            margin-left: 560px;
+            border: 2px solid #333;
+        }
+        
+        @media screen and (max-width:800px) {
+            #siteContainer,
+            #logo {
+                width: 100%;
+            }
+            #mainHeader {
+                margin-top: 0px;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                background-color: #333;
+                border: 1px solid red;
+                padding-bottom: initial;
+            }
+            #heroImg1 {
+                width: auto;
+            }
+            #mainNav {
+                display: none;
+            }
+            #mainFooter {
+                width: 100%;
+            }
+            #emailList,
+            #contactInformation,
+            #copyright {
+                width: 100%;
+                margin-left: 0px;
+                border: 0px;
+            }
+            .supportTeam>div {
+                width: 100%;
+                margin: 5%;
+            }
+            #person,
+            #personInfo,
+            #personName {
+                width: 100%;
+            }
